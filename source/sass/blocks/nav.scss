@@ -1,0 +1,41 @@
+
+.nav--footer {
+  margin: 0;
+  margin-right: 29.5%;
+  }
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: calc(450px + (100vw - 1024px) * (450 - 599) / (1024 - 1366));
+  max-width: 599px;
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+
+
+.nav__link {
+  color: $color-alice-blue;
+  text-decoration: none;
+  vertical-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav__item{
+  margin-right: 5.5%;
+}
+
+.nav__item--header:nth-of-type(4),
+.nav__item--footer:nth-of-type(4) {
+  margin-right: 0;
+}

@@ -1,0 +1,144 @@
+.catalog {
+  background-color: $color-whisper;
+  padding: 108px 8.6%;
+}
+
+.catalog__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1130px;
+}
+
+.catalog__title {
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  color: $color-tangaroa;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 260px));
+  grid-column-gap: 2.7%;
+  grid-row-gap: 30px;
+  grid-template-rows: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1130px;
+}
+
+.catalog__item {
+  padding: 35px 9.6%;
+  min-height: 386px;
+  background-color: $color-tangaroa;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+  color: $color-alice-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+.catalog__item:hover,
+.catalog__item:focus {
+  background-image: none;
+}
+
+.catalog__text-wrapper{
+display: none;
+}
+
+.catalog__item:hover .catalog__text-wrapper,
+.catalog__item:focus .catalog__text-wrapper {
+ display: block;
+}
+
+.catalog__item--astoria {
+background-image: url("../img/astoria-desktop.jpg");
+}
+
+.catalog__item--elain {
+  background-image: url("../img/minion-desktop.jpg");
+}
+
+.catalog__item--atlantis{
+  background-image: url("../img/atlantis-desktop.jpg");
+}
+
+.catalog__item--odessey{
+  background-image: url("../img/odessey-desktop.jpg");
+}
+
+.catalog__item--olympia {
+  background-image: url("../img/olympia-desktop.jpg");
+}
+
+.catalog__item--avrora{
+  background-image: url("../img/avrora-desktop.jpg");
+}
+
+.catalog__item--leonor{
+  background-image: url("../img/leonor-desktop.jpg");
+}
+
+.catalog__item--minion {
+  background-image: url("../img/minion-desktop.jpg");
+}
+
+.catalog__item-title {
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 0;
+}
+
+.catalog__item-title--up {
+margin-bottom: 25px;
+}
+
+.catalog__item:hover .catalog__item-title--down,
+.catalog__item:focus .catalog__item-title--down {
+  display: none;
+}
+
+.catalog__item-text {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.catalog__item-text:last-of-type {
+  margin-bottom: 30px;
+}
+
+.catalog__item-text--subtitle {
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.catalog__button {
+background-color: $color-alice-blue;
+color: $color-tangaroa;
+font-family: "Montserrat Semibold", "Arial", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 21px;
+padding: 14px 21.9%;
+margin: 0;
+}

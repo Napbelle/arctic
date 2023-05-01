@@ -5,7 +5,9 @@
 
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
+$color-transparent:                 rgba(0, 0, 0, 0.25);
+$color-transparent-tangaroa:        rgba(1, 28, 64, 0.7);
+
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -15,6 +17,7 @@ $color-solitude:                    #E3ECF6;
 $color-prussian-blue:               #00356F;
 $color-pale-cornflower-blue:        #B2DAFA;
 $color-whisper:                     #E5E5E5;
+$color-alice-blue:                  #F9FBFD;
 
 // Gradient
 

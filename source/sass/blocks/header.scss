@@ -4,6 +4,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- // padding: 170px 18% 282px 24.5%;
-  height: 100%;
+  padding: 35px 7.5%;
+  box-shadow: 0 4px 4px $color-transparent;
+
+  @media (min-width: 1024px) {
+  min-height: 650px;
+}
+
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1160px;
+  box-sizing: border-box;
+}
+
+.header__first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }

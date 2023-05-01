@@ -4,6 +4,175 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- // padding: 170px 18% 282px 24.5%;
-  height: 100%;
+  padding: 50px 11.9%;
+}
+
+.form__wrapper {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+margin: 0 auto;
+max-width: 1040px;
+}
+
+.form__text-wrapper {
+  max-width: 493px;
+}
+
+.form__title {
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.form__text {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0;
+
+  @media screen and (min-width: 1024px) {
+  max-width: 352px;
+  }
+}
+
+.form__content-wrapper{
+  display: flex;
+  width: calc(350px + (403 - 350) * ((100vw - 500px) / (1366 - 500)));
+  border: none;
+  margin: 0;
+  padding: 50px 4.8%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: $color-tangaroa;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 403px;
+    min-height: 455px;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__legend {
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 35px;
+  color: $color-alice-blue;
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: calc(170px + (303 - 170) * ((100vw - 500px) / (1366 - 500)));
+  max-width: 303px;
+  height: 43px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 11px 16px;
+  background-color: $color-alice-blue;
+  cursor: text;
+}
+
+.form__input:hover,
+.form__input:focus {
+  background-color: $color-pale-cornflower-blue;
+}
+
+.form__input--wrapper {
+  padding: 0;
+  background-color: transparent;
+}
+
+.form__input::placeholder {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $color-transparent-tangaroa;
+}
+
+
+.form__checkbox-text {
+  position: relative;
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  color: $color-alice-blue;
+  margin: 0;
+  cursor: pointer;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.form__label--checkbox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 23px;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+.form__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: $color-alice-blue;
+}
+
+
+.form__checkbox[type="checkbox"]:checked + .form__mark::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.form__label--checkbox:hover .form__checkbox-text,
+.form__label--checkbox:focus-within .form__checkbox-text {
+  color: $color-pale-cornflower-blue;
+}
+
+.form__label--checkbox:focus-within .form-mark {
+ background-color: $color-pale-cornflower-blue;
+}
+
+
+.form__button {
+  box-sizing: border-box;
+  width: calc(150px + (303 - 150) * ((100vw - 500px) / (1366 - 500)));
+  max-width: 303px;
+  padding: 15px 29%;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: $color-tangaroa;
+  background-color: $color-alice-blue;
+  border: none;
+  cursor: pointer;
 }

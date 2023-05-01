@@ -1,0 +1,39 @@
+.about-us {
+  background-color: $color-whisper;
+  padding: 123px 7.5% 145px;
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-us__text-wrapper {
+//  width: calc(400px + (100vw - 1366px) * (400 - 512) / (1024 - 1366));
+  width: calc(400px + (512 - 400) * ((100vw - 500px) / (1366 - 500)));
+  max-width: 512px;
+}
+
+
+.about-us__title{
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  color: $color-tangaroa;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.about-us__text{
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-tangaroa;
+  margin: 0;
+}
