@@ -5,16 +5,26 @@
   background-size: cover;
   background-position: center;
   padding: 120px 7.5%;
-}
 
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/advantages-tablet.jpg");
+    padding: 100px 5.9%;
+}
+}
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1160px;
   margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    max-width: 1160px;
 }
 
+@media screen and (max-width: 1023px) {
+  width: 678px;
+}
+}
 .advantages__title {
   font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -24,10 +34,14 @@
   margin: 0;
   margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 26px;
+    line-height: 39px;
+}
 }
 
 .advantages__list {
-  max-width: 1160px;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 360px));
@@ -36,6 +50,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  @media (min-width: 1024px) {
+    max-width: 1160px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 678px;
+    grid-template-columns: repeat(3, 206px);
+    grid-column-gap: 4.4%;
+    grid-row-gap: 40px;
+}
 }
 
 .advantages__item-title {
@@ -48,12 +73,18 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-}
 
+  @media screen and (max-width: 1023px) {
+  line-height: 25.2px;
+}
+}
 .advantages__img {
   margin-bottom: 25px;
-}
 
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 24px;
+}
+}
 .advantages__text {
   font-family: "Montserrat Regular", "Arial", sans-serif;
   font-size: 14px;
@@ -68,4 +99,9 @@
   margin: 0;
   box-sizing: border-box;
   min-height: 241px;
+
+  @media screen and (max-width: 1023px) {
+    padding: 26px 16px 25px 20px;
+    min-height: 310px;
+}
 }

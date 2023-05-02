@@ -1,14 +1,24 @@
 .catalog {
   background-color: $color-whisper;
   padding: 108px 8.6%;
-}
 
+  @media screen and (max-width: 1023px) {
+    padding: 100px 60px;
+}
+}
 .catalog__wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 1024px) {
   max-width: 1130px;
+}
+
+@media screen and (max-width: 1023px) {
+  width: 648px;
+}
 }
 
 .catalog__title {
@@ -20,18 +30,40 @@
   margin-bottom: 60px;
   text-align: center;
   color: $color-tangaroa;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 26px;
+    line-height: 39px;
+}
 }
 
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 260px));
-  grid-column-gap: 2.7%;
+  //grid-column-gap: 2.7%;
+  grid-column-gap: calc(10px + (100vw - 1024px) * (10 - 30) / (1024 - 1366));
   grid-row-gap: 30px;
   grid-template-rows: auto;
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 1024px) {
   max-width: 1130px;
+}
+
+@media screen and (max-width: 1300px) {
+  grid-template-columns: repeat(3,260px);
+  grid-column-gap: calc(17px + (100vw - 1024px) * (17 - 70) / (1024 - 1300));
+  padding-right: calc(17px + (100vw - 1024px) * (17 - 78) / (1024 - 1300));
+  padding-left:  calc(17px + (100vw - 1024px) * (17 - 78) / (1024 - 1300));
+}
+
+@media screen and (max-width: 1023px) {
+  grid-template-columns: repeat(2, 309px);
+  width: 648px;
+  grid-column-gap: 30px;
+}
 }
 
 .catalog__item {
@@ -48,8 +80,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
-}
 
+  @media screen and (max-width: 1023px) {
+    padding: 35px;
+}
+}
 .catalog__item:hover,
 .catalog__item:focus {
   background-image: none;
@@ -66,34 +101,65 @@ display: none;
 
 .catalog__item--astoria {
 background-image: url("../img/astoria-desktop.jpg");
-}
 
+@media screen and (max-width: 1023px) {
+  background-image: url("../img/astoria-tablet.jpg");
+}
+}
 .catalog__item--elain {
   background-image: url("../img/minion-desktop.jpg");
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/minion-tablet.jpg");
+  }
 }
 
 .catalog__item--atlantis{
   background-image: url("../img/atlantis-desktop.jpg");
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/atlantis-tablet.jpg");
+  }
 }
 
 .catalog__item--odessey{
   background-image: url("../img/odessey-desktop.jpg");
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/odessey-tablet.jpg");
+  }
 }
 
 .catalog__item--olympia {
   background-image: url("../img/olympia-desktop.jpg");
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/olympia-tablet.jpg");
+  }
 }
 
 .catalog__item--avrora{
   background-image: url("../img/avrora-desktop.jpg");
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/avrora-tablet.jpg");
+  }
 }
 
 .catalog__item--leonor{
   background-image: url("../img/leonor-desktop.jpg");
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/leonor-tablet.jpg");
+  }
 }
 
 .catalog__item--minion {
   background-image: url("../img/minion-desktop.jpg");
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/minion-tablet.jpg");
+  }
 }
 
 .catalog__item-title {
@@ -136,9 +202,12 @@ margin-bottom: 25px;
 background-color: $color-alice-blue;
 color: $color-tangaroa;
 font-family: "Montserrat Semibold", "Arial", sans-serif;
-font-size: 14px;
+font-size: 14px ;
 font-weight: 600;
 line-height: 21px;
-padding: 14px 21.9%;
+padding: 14px 18%;
 margin: 0;
+display: block;
+width: calc(100px + (210 - 100) * ((100vw - 500px) / (1366 - 500)));
+
 }

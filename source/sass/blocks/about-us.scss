@@ -1,23 +1,41 @@
 .about-us {
   background-color: $color-whisper;
   padding: 123px 7.5% 145px;
+
+  @media screen and (max-width: 1023px) {
+    padding: 100px 5.9%;
+}
 }
 
 .about-us__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  max-width: 1160px;
+  //justify-content: space-between;
   margin: 0 auto;
   align-items: center;
+
+  @media (min-width: 1024px) {
+    max-width: 1160px;
+}
+
+@media screen and (max-width: 1023px) {
+  width: 678px;
+  align-items: flex-start;
+}
 }
 
 .about-us__text-wrapper {
 //  width: calc(400px + (100vw - 1366px) * (400 - 512) / (1024 - 1366));
-  width: calc(400px + (512 - 400) * ((100vw - 500px) / (1366 - 500)));
+  width: calc(373px + (512 - 373) * ((100vw - 500px) / (1366 - 500)));
+  margin-right: calc(40px + (100vw - 1024px) * (40 - 88) / (1024 - 1366));
+
+  @media (min-width: 1024px) {
   max-width: 512px;
 }
-
+@media screen and (max-width: 1023px) {
+  width: 324px;
+}
+}
 
 .about-us__title{
   font-family: "Montserrat Semibold", "Arial", sans-serif;
@@ -27,6 +45,13 @@
   color: $color-tangaroa;
   margin: 0;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 26px;
+    line-height: 36.4px;
+    margin-bottom: 30px;
+}
+
 }
 
 .about-us__text{
@@ -36,4 +61,12 @@
   line-height: 24px;
   color: $color-tangaroa;
   margin: 0;
+}
+
+
+.about-us__img {
+  @media screen and (max-width: 1023px) {
+    width: 324px;
+    height: 174.1px;
+}
 }

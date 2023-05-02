@@ -1,10 +1,14 @@
 
 .welcome{
 width: 100%;
+
+@media (min-width: 1024px) {
 max-width: 1160px;
-
 }
-
+@media screen and (max-width: 1023px) {
+width: 678px;
+}
+}
 .welcome__title {
   font-family: "Montserrat Bold", "Arial", sans-serif;
   font-size: 54px;
@@ -14,6 +18,12 @@ max-width: 1160px;
  // letter-spacing: 5px;
  color: $color-alice-blue;
  text-shadow: 0 4px 4px $color-transparent;
+
+ @media screen and (max-width: 1023px) {
+  font-size: 50px;
+  line-height: 60.9px;
+  margin: 235px 5.9% 29px 0;
+}
 }
 
 .welcome__text {
@@ -21,7 +31,12 @@ max-width: 1160px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24.4px;
-  margin: 0  8.2%;
+  margin: 0 8.2%;
   color: $color-alice-blue;
   text-shadow: 0 4px 4px $color-transparent;
+  @media screen and (max-width: 1023px) {
+    font-size: 18px;
+    line-height: 21.9px;
+    margin: 0;
+}
 }

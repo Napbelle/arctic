@@ -5,20 +5,42 @@
   background-size: cover;
   background-position: center;
   padding: 50px 11.9%;
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("../img/form-tablet.jpg");
+    padding: 100px 175px;
+  }
 }
 
 .form__wrapper {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-box-sizing: border-box;
-margin: 0 auto;
-max-width: 1040px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    max-width: 1040px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 419px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .form__text-wrapper {
-  max-width: 493px;
+
+  @media (min-width: 1024px) {
+    max-width: 493px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 419px;
+  }
 }
 
 .form__title {
@@ -28,6 +50,25 @@ max-width: 1040px;
   line-height: 60px;
   margin: 0;
   margin-bottom: 30px;
+  br {
+    display: none;
+  }
+
+  @media screen and (max-width: 1232px) {
+    br {
+      display: block;
+    }
+
+  }
+  @media screen and (max-width: 1023px) {
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 25px;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
 }
 
 .form__text {
@@ -36,13 +77,17 @@ max-width: 1040px;
   font-weight: 400;
   line-height: 27px;
   margin: 0;
-
-  @media screen and (min-width: 1024px) {
   max-width: 352px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 33px 60px;
+    text-align: center;
   }
 }
 
-.form__content-wrapper{
+.form__content-wrapper {
   display: flex;
   width: calc(350px + (403 - 350) * ((100vw - 500px) / (1366 - 500)));
   border: none;
@@ -51,11 +96,16 @@ max-width: 1040px;
   flex-wrap: wrap;
   flex-direction: column;
   background-color: $color-tangaroa;
+  min-height: 455px;
 
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1024px) {
     max-width: 403px;
-    min-height: 455px;
   }
+
+  @media screen and (max-width: 1023px) {
+    padding: 50px;
+    width: 403px;
+}
 }
 
 .form__fieldset {
@@ -76,14 +126,21 @@ max-width: 1040px;
 
 .form__input {
   box-sizing: border-box;
-  width: calc(170px + (303 - 170) * ((100vw - 500px) / (1366 - 500)));
-  max-width: 303px;
+  width: calc(270px + (303 - 270) * ((100vw - 500px) / (1366 - 500)));
   height: 43px;
   margin-bottom: 20px;
   border: none;
   padding: 11px 16px;
   background-color: $color-alice-blue;
   cursor: text;
+
+  @media (min-width: 1024px) {
+    max-width: 303px;
+}
+
+@media screen and (max-width: 1023px) {
+  width: 303px;
+}
 }
 
 .form__input:hover,
@@ -141,7 +198,7 @@ max-width: 1040px;
 }
 
 
-.form__checkbox[type="checkbox"]:checked + .form__mark::after {
+.form__checkbox[type="checkbox"]:checked+.form__mark::after {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -158,14 +215,13 @@ max-width: 1040px;
 }
 
 .form__label--checkbox:focus-within .form-mark {
- background-color: $color-pale-cornflower-blue;
+  background-color: $color-pale-cornflower-blue;
 }
 
 
 .form__button {
   box-sizing: border-box;
-  width: calc(150px + (303 - 150) * ((100vw - 500px) / (1366 - 500)));
-  max-width: 303px;
+  width: calc(270px + (303 - 270) * ((100vw - 500px) / (1366 - 500)));
   padding: 15px 29%;
   font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 14px;
@@ -175,4 +231,12 @@ max-width: 1040px;
   background-color: $color-alice-blue;
   border: none;
   cursor: pointer;
+
+  @media (min-width: 1024px) {
+    max-width: 303px;
+}
+
+@media screen and (max-width: 1023px) {
+  width: 303px;
+}
 }

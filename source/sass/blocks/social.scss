@@ -10,8 +10,32 @@
 
 .social__item {
   margin-right: 27px;
+
+  @media screen and (max-width: 1023px) {
+    margin-right: 22.3px;
+  }
 }
 
 .social__item:nth-of-type(3) {
 margin-right: 0;
+}
+
+.social__img--ok {
+  @media screen and (max-width: 1023px) {
+width: 9.6px;
+height: 16px;
+  }
+}
+
+.social__img--yd {
+  @media screen and (max-width: 1023px) {
+    width: 16.4px;
+    height: 16px;
+  }
+}
+.social__img--sss {
+  @media screen and (max-width: 1023px) {
+    width: 16.4px;
+    height: 16px;
+  }
 }
