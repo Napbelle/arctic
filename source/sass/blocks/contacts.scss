@@ -5,6 +5,10 @@
   @media screen and (max-width: 1023px) {
     padding: 100px 45px;
 }
+
+@media screen and (max-width: 767px) {
+  padding: 65px 4.7%;
+}
 }
 
 .contacts__wrapper {
@@ -21,6 +25,12 @@
 @media screen and (max-width: 1023px) {
   width: 678px;
 }
+
+@media screen and (max-width: 767px) {
+  width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
+  max-width: 731px;
+  flex-direction:column-reverse;
+}
 }
 
 .contacts__text-wrapper {
@@ -31,6 +41,11 @@ max-width: 500px;
 }
 @media screen and (max-width: 1023px) {
   width: 324px;
+}
+@media screen and (max-width: 767px) {
+  width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
+  max-width: 731px;
+  margin-bottom: 43px;
 }
 }
 

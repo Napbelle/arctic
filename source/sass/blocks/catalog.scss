@@ -5,7 +5,11 @@
   @media screen and (max-width: 1023px) {
     padding: 100px 60px;
 }
+@media screen and (max-width: 1023px) {
+  padding: 65px 7.8%;
 }
+}
+
 .catalog__wrapper {
   margin: 0 auto;
   display: flex;
@@ -18,6 +22,11 @@
 
 @media screen and (max-width: 1023px) {
   width: 648px;
+}
+
+@media screen and (max-width: 767px) {
+  width: calc(270px + (100vw - 320px) * (270 - 701) / (320 - 767));
+  max-width: 701px;
 }
 }
 
@@ -34,6 +43,12 @@
   @media screen and (max-width: 1023px) {
     font-size: 26px;
     line-height: 39px;
+}
+
+
+@media screen and (max-width: 767px) {
+  font-size: 24px;
+  line-height: 36px;
 }
 }
 
@@ -64,6 +79,10 @@
   width: 648px;
   grid-column-gap: 30px;
 }
+@media screen and (max-width: 767px) {
+grid-template-columns: minmax(270px, 701px);
+width: calc(270px + (100vw - 320px) * (270 - 701) / (320 - 767));
+}
 }
 
 .catalog__item {
@@ -84,7 +103,11 @@
   @media screen and (max-width: 1023px) {
     padding: 35px;
 }
+@media screen and (max-width: 767px) {
+padding: 35px 9.6%;
 }
+}
+
 .catalog__item:hover,
 .catalog__item:focus {
   background-image: none;
@@ -105,12 +128,19 @@ background-image: url("../img/astoria-desktop.jpg");
 @media screen and (max-width: 1023px) {
   background-image: url("../img/astoria-tablet.jpg");
 }
+
+@media screen and (max-width: 767px) {
+  background-image: url("../img/astoria-mobile.jpg");
+}
 }
 .catalog__item--elain {
   background-image: url("../img/minion-desktop.jpg");
 
   @media screen and (max-width: 1023px) {
     background-image: url("../img/minion-tablet.jpg");
+  }
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/minion-mobile.jpg");
   }
 }
 
@@ -120,6 +150,9 @@ background-image: url("../img/astoria-desktop.jpg");
   @media screen and (max-width: 1023px) {
     background-image: url("../img/atlantis-tablet.jpg");
   }
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/atlantis-mobile.jpg");
+  }
 }
 
 .catalog__item--odessey{
@@ -127,6 +160,9 @@ background-image: url("../img/astoria-desktop.jpg");
 
   @media screen and (max-width: 1023px) {
     background-image: url("../img/odessey-tablet.jpg");
+  }
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/odessey-mobile.jpg");
   }
 }
 
@@ -136,6 +172,9 @@ background-image: url("../img/astoria-desktop.jpg");
   @media screen and (max-width: 1023px) {
     background-image: url("../img/olympia-tablet.jpg");
   }
+  @media screen and (max-width: 767px) {
+
+  }
 }
 
 .catalog__item--avrora{
@@ -143,6 +182,9 @@ background-image: url("../img/astoria-desktop.jpg");
 
   @media screen and (max-width: 1023px) {
     background-image: url("../img/avrora-tablet.jpg");
+  }
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/avrora-mobile.jpg");
   }
 }
 
@@ -152,6 +194,9 @@ background-image: url("../img/astoria-desktop.jpg");
   @media screen and (max-width: 1023px) {
     background-image: url("../img/leonor-tablet.jpg");
   }
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/leonor-mobile.jpg");
+  }
 }
 
 .catalog__item--minion {
@@ -159,6 +204,9 @@ background-image: url("../img/astoria-desktop.jpg");
 
   @media screen and (max-width: 1023px) {
     background-image: url("../img/minion-tablet.jpg");
+  }
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/minion-mobile.jpg");
   }
 }
 
@@ -210,4 +258,8 @@ margin: 0;
 display: block;
 width: calc(100px + (210 - 100) * ((100vw - 500px) / (1366 - 500)));
 
+@media screen and (max-width: 767px) {
+width: calc(220px + (100vw - 320px) * (220 - 667) / (320 - 767));
+padding: 14px 23.6%;
+}
 }
