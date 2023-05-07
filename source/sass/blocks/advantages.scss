@@ -32,8 +32,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
-  max-width: 731px;
+  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
+  max-width: 694px;
 }
 
 }
@@ -84,7 +84,7 @@
 @media screen and (max-width: 767px) {
   grid-template-columns: minmax(290px, 731px);
   grid-row-gap: 30px;
-  width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
+  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
 }
 }
 
@@ -141,6 +141,6 @@
 @media screen and (max-width: 767px) {
   padding: 25px 6.9%;
   min-height: 249px;
-  width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
+  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
 }
 }

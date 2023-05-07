@@ -39,3 +39,13 @@ height: 16px;
     height: 16px;
   }
 }
+
+
+.social__link {
+color:$color-alice-blue;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: $color-deep-sky-blue;
+}

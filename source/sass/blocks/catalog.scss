@@ -25,8 +25,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  width: calc(270px + (100vw - 320px) * (270 - 701) / (320 - 767));
-  max-width: 701px;
+  width: calc(270px + (100vw - 320px) * (270 - 646) / (320 - 767));
+  max-width: 646px;
 }
 }
 
@@ -55,8 +55,8 @@
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 260px));
-  //grid-column-gap: 2.7%;
-  grid-column-gap: calc(10px + (100vw - 1024px) * (10 - 30) / (1024 - 1366));
+  grid-column-gap: 2.7%;
+ // grid-column-gap: calc(10px + (100vw - 1024px) * (10 - 30) / (1024 - 1366));
   grid-row-gap: 30px;
   grid-template-rows: auto;
   list-style-type: none;
@@ -79,9 +79,21 @@
   width: 648px;
   grid-column-gap: 30px;
 }
+
 @media screen and (max-width: 767px) {
-grid-template-columns: minmax(270px, 701px);
-width: calc(270px + (100vw - 320px) * (270 - 701) / (320 - 767));
+  grid-template-columns: repeat(2, minmax(245px, 300px));
+  grid-column-gap: calc(15px + (100vw - 600px) * (15 - 70) / (600 - 767));
+  width: calc(506px + (100vw - 600px) * (506 - 645) / (600 - 767));
+}
+
+@media screen and (max-width: 600px) {
+grid-template-columns: minmax(270px, 646px);
+width: calc(270px + (100vw - 320px) * (270 - 646) / (320 - 767));
+}
+
+@media screen and (max-width: 319px) {
+  grid-template-columns: minmax(230px, 270px);
+  width: calc(230px + (100vw - 270px) * (230 - 270) / (270 - 319));
 }
 }
 
@@ -227,6 +239,14 @@ margin-bottom: 25px;
   display: none;
 }
 
+.catalog__item-title--down {
+  @media screen and (max-width: 600px) and (min-width: 510px) {
+color: $color-tangaroa;
+font-family: "Montserrat Bold", "Arial", sans-serif;
+font-weight: 700;
+}
+}
+
 .catalog__item-text {
   font-family: "Montserrat Regular", "Arial", sans-serif;
   font-size: 14px;
@@ -254,12 +274,36 @@ font-size: 14px ;
 font-weight: 600;
 line-height: 21px;
 padding: 14px 18%;
+text-align: center;
 margin: 0;
 display: block;
 width: calc(100px + (210 - 100) * ((100vw - 500px) / (1366 - 500)));
+max-width: 210px;
+
+@media screen and (max-width: 1300px) {
+  width: 210px;
+}
+
+@media screen and (max-width: 1023px) {
+  width:239px;
+  }
 
 @media screen and (max-width: 767px) {
-width: calc(220px + (100vw - 320px) * (220 - 667) / (320 - 767));
+width: calc(190px + (100vw - 600px) * (190 - 240) / (600 - 767));
 padding: 14px 23.6%;
 }
+
+@media screen and (max-width: 600px) {
+width: calc(210px + (100vw - 320px) * (210 - 408) / (320 - 600));
+max-width: 408px;
+}
+
+@media screen and (max-width: 319px) {
+  font-size: 12px ;
+line-height: 19px;
+}
+}
+.catalog__button:hover,
+.catalog__button:focus {
+background-color: $color-pale-cornflower-blue;
 }

@@ -38,7 +38,7 @@
   }
 
 @media screen and (max-width: 767px) {
-  width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
+  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
 }
 }
 
@@ -52,7 +52,7 @@
     width: 419px;
   }
   @media screen and (max-width: 767px) {
-    width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
+    width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
   }
 }
 
@@ -105,7 +105,9 @@
   @media screen and (max-width: 767px) {
     font-size: 16px;
     line-height: 22.4px;
-    margin: 0 5.9% 40px;
+    margin: 0;
+    margin-bottom: 40px;
+    width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
 }
 }
 
@@ -130,9 +132,13 @@
 }
 
 @media screen and (max-width: 767px) {
-  width: calc(290px + (100vw - 320px) * (290 - 403) / (320 - 767));
-  max-width: 403px;
+  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
+  max-width: 694px;
   padding: 40px 11%;
+}
+
+@media screen and (max-width: 319px) {
+  width: calc(230px + (100vw - 270px) * (230 - 270) / (270 - 319));
 }
 }
 
@@ -144,6 +150,10 @@
   @media screen and (max-width: 767px) {
     width: calc(230px + (100vw - 320px) * (230 - 297) / (320 - 767));
     max-width: 297px;
+}
+
+@media screen and (max-width: 319px) {
+  width: calc(177px + (100vw - 270px) * (177 - 230) / (270 - 319));
 }
 }
 
@@ -179,8 +189,11 @@
   width: 303px;
 }
 @media screen and (max-width: 767px) {
-width: calc(230px + (100vw - 320px) * (230 - 297) / (320 - 767));
-max-width: 297px;
+width: calc(230px + (100vw - 320px) * (230 - 540) / (320 - 767));
+max-width: 540px;
+}
+@media screen and (max-width: 319px) {
+  width: calc(177px + (100vw - 270px) * (177 - 230) / (270 - 319));
 }
 }
 
@@ -293,15 +306,27 @@ max-width: 297px;
 }
 
 @media screen and (max-width: 767px) {
-  width: calc(230px + (100vw - 320px) * (230 - 297) / (320 - 767));
-  max-width: 297px;
+  width: calc(230px + (100vw - 320px) * (230 - 540) / (320 - 767));
+  max-width: 540px;
   padding: 15px 22%;
+}
+@media screen and (max-width: 319px) {
+  width: calc(177px + (100vw - 270px) * (177 - 230) / (270 - 319));
 }
 }
 
+.form__button:hover,
+.form__button:focus {
+background-color: $color-pale-cornflower-blue;
+}
+
+
 .form__button-wrapper{
   @media screen and (max-width: 767px) {
-width: calc(230px + (100vw - 320px) * (230 - 297) / (320 - 767));
-max-width: 297px;
+    width: calc(230px + (100vw - 320px) * (230 - 540) / (320 - 767));
+    max-width: 540px;
   }
-}
+  @media screen and (max-width: 319px) {
+    width: calc(177px + (100vw - 270px) * (177 - 230) / (270 - 319));
+  }
+  }

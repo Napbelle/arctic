@@ -64,6 +64,12 @@
   cursor: pointer;
 }
 
+
+.nav__link:hover,
+.nav__link:focus {
+color: $color-deep-sky-blue;
+}
+
 .nav__item{
   margin-right: 5.5%;
 
