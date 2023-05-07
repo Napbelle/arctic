@@ -689,6 +689,12 @@ button,
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header__img.is-invalid {
+    display: none;
+  }
+}
+
 .footer {
   background-color: #011C40;
   padding: 63px 7.5%;
@@ -1413,12 +1419,6 @@ button,
   }
 }
   */
-@media screen and (max-width: 767px) {
-  .nav--header {
-    display: none;
-  }
-}
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1448,6 +1448,80 @@ button,
     font-size: 14px;
     line-height: 17px;
     width: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__list--header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__img--opened {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__img--opened.is-active {
+    display: block;
+    color: #011C40;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__img--closed {
+    color: #F9FBFD;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__img--closed.is-invalid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__img:hover,
+.nav__img:focus {
+    color: #00b2ff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__list--header.is-active {
+    margin: 0;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 285px;
+    min-height: 568px;
+    background-color: #F9FBFD;
+    color: #011C40;
+    font-family: "Montserrat Medium", "Arial", sans-serif;
+    font-weight: 500;
+    padding: 75px 15px;
+    font-size: 18px;
+    line-height: 21.9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+@media screen and (max-width: 319px) {
+  .nav__list--header.is-active {
+    width: calc(230px + (100vw - 270px) * -40 / -49);
   }
 }
 
@@ -1483,6 +1557,15 @@ button,
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__link--header {
+    color: #011C40;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 .nav__link:hover,
 .nav__link:focus {
   color: #00b2ff;
@@ -1503,9 +1586,68 @@ button,
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav__item--header {
+    margin-bottom: 10px;
+    width: 240px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .nav__item--header {
+    width: 190px;
+  }
+}
+
 .nav__item--header:nth-of-type(4),
 .nav__item--footer:nth-of-type(4) {
   margin-right: 0;
+}
+
+.nav__toggle {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .nav__toggle {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.nav__logo-img {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__logo-img.is-active {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 228px;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 319px) {
+  .nav__logo-img.is-active {
+    right: 65.2%;
+  }
 }
 
 .welcome {
@@ -2243,6 +2385,33 @@ button,
 .contacts__link:hover,
 .contacts__link:focus {
   color: #00b2ff;
+}
+
+.contacts__link {
+  cursor: pointer;
+}
+
+.contacts iframe {
+  border: none;
+  display: block;
+  width: calc(200px + 360 * (100vw - 500px) / 866);
+  height: 306px;
+  background-image: url("../img/map-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 1023px) {
+  .contacts iframe {
+    width: 324px;
+    height: 335px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts iframe {
+    width: calc(290px + (100vw - 320px) * -404 / -447);
+    height: calc(316px + (100vw - 320px) * -474 / -447);
+  }
 }
 
 #map__container {
