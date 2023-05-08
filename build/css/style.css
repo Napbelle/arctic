@@ -572,7 +572,7 @@ button,
 
 .header {
   background-image: url("../img/welcome-desktop.jpg");
-  background-color: #00356F;
+  background-color: #00356f;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -590,13 +590,17 @@ button,
   .header {
     background-image: url("../img/welcome-tablet.jpg");
     padding: 30px 5.9%;
-    height: 638px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    min-height: 638px;
   }
 }
 @media screen and (max-width: 767px) {
   .header {
     background-image: url("../img/welcome-mobile.jpg");
-    padding: 20px 4.7%;
+    padding: 20px 5%;
     min-height: 500px;
   }
 }
@@ -690,7 +694,7 @@ button,
 }
 
 .footer {
-  background-color: #011C40;
+  background-color: #011c40;
   padding: 52px 7.5%;
 }
 @media screen and (max-width: 1023px) {
@@ -795,7 +799,7 @@ button,
 
 .advantages {
   background-image: url("../img/advantages-desktop.jpg");
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -810,7 +814,7 @@ button,
 @media screen and (max-width: 767px) {
   .advantages {
     background-image: url("../img/advantages-mobile.jpg");
-    padding: 65px 4.7%;
+    padding: 55px 4.7% 65px;
   }
 }
 
@@ -849,10 +853,13 @@ button,
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   margin-bottom: 50px;
   text-align: center;
+}
+.advantages__title br {
+  display: none;
 }
 @media screen and (max-width: 1023px) {
   .advantages__title {
@@ -864,7 +871,10 @@ button,
   .advantages__title {
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+  .advantages__title br {
+    display: block;
   }
 }
 
@@ -909,7 +919,7 @@ button,
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   margin-bottom: 8px;
   display: -webkit-box;
@@ -920,17 +930,23 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.advantages__item-title br {
+  display: none;
+}
 @media screen and (max-width: 1023px) {
   .advantages__item-title {
     line-height: 25.2px;
     margin-bottom: 9px;
+  }
+  .advantages__item-title br {
+    display: block;
   }
 }
 @media screen and (max-width: 767px) {
   .advantages__item-title {
     font-size: 18px;
     line-height: 25.2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -939,13 +955,18 @@ button,
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  .advantages__item-title--excursion {
+    margin-bottom: 10px;
+  }
+}
 
 .advantages__img {
   margin-bottom: 18px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .advantages__img {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
   }
 }
 
@@ -975,7 +996,7 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
 }
 
@@ -985,7 +1006,7 @@ button,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 241px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 @media screen and (max-width: 1023px) {
   .advantages__item {
@@ -995,15 +1016,21 @@ button,
 }
 @media screen and (max-width: 767px) {
   .advantages__item {
-    padding: 25px 6.9%;
+    padding: 25px 6.9% 21px;
     min-height: 249px;
     width: calc(290px + (100vw - 320px) * -404 / -447);
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantages__item--cruise {
+    padding: 25px 6.9% 23px;
+  }
+}
+
 .form {
   background-image: url("../img/form-desktop.jpg");
-  background-color: #B2DAFA;
+  background-color: #b2dafa;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1018,7 +1045,7 @@ button,
 @media screen and (max-width: 767px) {
   .form {
     background-image: url("../img/form-mobile.jpg");
-    padding: 65px 4.7%;
+    padding: 68px 4.7% 65px;
     min-height: 760px;
   }
 }
@@ -1115,6 +1142,7 @@ button,
   .form__title {
     font-size: 24px;
     line-height: 31.2px;
+    margin-bottom: 13px;
   }
 }
 
@@ -1124,6 +1152,9 @@ button,
   font-weight: 400;
   line-height: 27px;
   margin: 0;
+}
+.form__text br {
+  display: none;
 }
 @media screen and (max-width: 1023px) {
   .form__text {
@@ -1143,8 +1174,11 @@ button,
     font-size: 16px;
     line-height: 22.4px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     width: calc(290px + (100vw - 320px) * -404 / -447);
+  }
+  .form__text br {
+    display: block;
   }
 }
 
@@ -1162,7 +1196,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #011C40;
+  background-color: #011c40;
   min-height: 455px;
 }
 @media (min-width: 1024px) {
@@ -1180,7 +1214,7 @@ button,
   .form__content-wrapper {
     width: calc(290px + (100vw - 320px) * -404 / -447);
     max-width: 694px;
-    padding: 40px 11%;
+    padding: 35px 10% 42px;
   }
 }
 @media screen and (max-width: 319px) {
@@ -1213,7 +1247,7 @@ button,
   line-height: 27px;
   margin: 0;
   margin-bottom: 28px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 @media screen and (max-width: 1023px) {
   .form__legend {
@@ -1223,6 +1257,8 @@ button,
 @media screen and (max-width: 767px) {
   .form__legend {
     line-height: 25.2px;
+    text-align: center;
+    margin-bottom: 26px;
   }
 }
 
@@ -1234,7 +1270,7 @@ button,
   margin-bottom: 20px;
   border: none;
   padding: 11px 16px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   cursor: text;
 }
 @media (min-width: 1024px) {
@@ -1261,7 +1297,7 @@ button,
 
 .form__input:hover,
 .form__input:focus {
-  background-color: #B2DAFA;
+  background-color: #b2dafa;
 }
 
 .form__input--wrapper {
@@ -1315,7 +1351,7 @@ button,
   font-size: 10px;
   font-weight: 400;
   line-height: 13px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   margin: 0;
   margin-top: 3px;
   cursor: pointer;
@@ -1326,6 +1362,7 @@ button,
 @media screen and (max-width: 767px) {
   .form__checkbox-text {
     line-height: 12px;
+    margin-top: 0;
   }
 }
 
@@ -1359,7 +1396,7 @@ button,
   width: 18px;
   height: 18px;
   border: none;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 @media screen and (max-width: 767px) {
   .form__mark {
@@ -1381,11 +1418,11 @@ button,
 
 .form__label--checkbox:hover .form__checkbox-text,
 .form__label--checkbox:focus-within .form__checkbox-text {
-  color: #B2DAFA;
+  color: #b2dafa;
 }
 
 .form__label--checkbox:focus-within .form-mark {
-  background-color: #B2DAFA;
+  background-color: #b2dafa;
 }
 
 .form__button {
@@ -1397,8 +1434,8 @@ button,
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
-  color: #011C40;
-  background-color: #F9FBFD;
+  color: #011c40;
+  background-color: #f9fbfd;
   border: none;
   cursor: pointer;
 }
@@ -1417,7 +1454,8 @@ button,
   .form__button {
     width: calc(230px + (100vw - 320px) * -310 / -447);
     max-width: 540px;
-    padding: 15px 22%;
+    padding: 10px 22%;
+    margin-top: -3px;
   }
 }
 @media screen and (max-width: 319px) {
@@ -1428,7 +1466,7 @@ button,
 
 .form__button:hover,
 .form__button:focus {
-  background-color: #B2DAFA;
+  background-color: #b2dafa;
 }
 
 @media screen and (max-width: 767px) {
@@ -1500,13 +1538,15 @@ button,
 @media screen and (max-width: 767px) {
   .nav__img--opened.is-active {
     display: block;
-    color: #011C40;
+    color: #011c40;
+    margin: 0;
+    margin-left: 13px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .nav__img--closed {
-    color: #F9FBFD;
+    color: #f9fbfd;
   }
 }
 
@@ -1526,7 +1566,6 @@ button,
 @media screen and (max-width: 767px) {
   .nav__list--header.is-active {
     margin: 0;
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1538,11 +1577,11 @@ button,
             box-sizing: border-box;
     width: 285px;
     min-height: 568px;
-    background-color: #F9FBFD;
-    color: #011C40;
+    background-color: #f9fbfd;
+    color: #011c40;
     font-family: "Montserrat Medium", "Arial", sans-serif;
     font-weight: 500;
-    padding: 75px 15px;
+    padding: 84px 26px;
     font-size: 18px;
     line-height: 21.9px;
     position: absolute;
@@ -1577,7 +1616,7 @@ button,
 }
 
 .nav__link {
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-decoration: none;
   vertical-align: center;
   margin: 0;
@@ -1593,7 +1632,7 @@ button,
 
 @media screen and (max-width: 767px) {
   .nav__link--header {
-    color: #011C40;
+    color: #011c40;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -1622,7 +1661,7 @@ button,
 
 @media screen and (max-width: 767px) {
   .nav__item--header {
-    margin-bottom: 10px;
+    margin-bottom: 28px;
     width: 240px;
   }
 }
@@ -1642,6 +1681,11 @@ button,
     margin-right: 23px;
   }
 }
+@media screen and (max-width: 767px) {
+  .nav__item--footer {
+    margin-bottom: 18px;
+  }
+}
 
 .nav__toggle {
   display: none;
@@ -1652,7 +1696,7 @@ button,
     border: none;
     position: absolute;
     top: 15px;
-    right: 10px;
+    right: 12.5px;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1679,8 +1723,8 @@ button,
   .nav__logo-img.is-active {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 228px;
+    top: 18px;
+    right: 226px;
     z-index: 10;
   }
 }
@@ -1705,7 +1749,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .welcome {
-    width: calc(259px + (100vw - 320px) * -363 / -447);
+    width: calc(290px + (100vw - 320px) * -332 / -447);
     max-width: 622px;
   }
 }
@@ -1716,7 +1760,7 @@ button,
   font-weight: 700;
   line-height: 65.8px;
   margin: 197px 8.2% 11px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 1023px) {
@@ -1730,7 +1774,7 @@ button,
   .welcome__title {
     font-size: 36px;
     line-height: 45px;
-    margin: 143px 0 25px;
+    margin: 135px 0 12px;
   }
 }
 
@@ -1740,8 +1784,11 @@ button,
   font-weight: 400;
   line-height: 24.4px;
   margin: 0 8.2%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.welcome__text br {
+  display: none;
 }
 @media screen and (max-width: 1023px) {
   .welcome__text {
@@ -1755,10 +1802,13 @@ button,
     font-size: 16px;
     line-height: 22.4px;
   }
+  .welcome__text br {
+    display: block;
+  }
 }
 
 .about-us {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   padding: 120px 7.5% 145px;
 }
 @media screen and (max-width: 1023px) {
@@ -1839,7 +1889,7 @@ button,
     width: calc(290px + (100vw - 320px) * -404 / -447);
     max-width: 731px;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
   .about-us__text-wrapper br {
     display: block;
@@ -1851,7 +1901,7 @@ button,
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   margin-bottom: 23px;
 }
@@ -1873,6 +1923,7 @@ button,
   .about-us__title {
     font-size: 24px;
     line-height: 33.6px;
+    margin-bottom: 17px;
   }
 }
 
@@ -1881,7 +1932,7 @@ button,
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
 }
 
@@ -1905,7 +1956,7 @@ button,
 }
 
 .catalog {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   padding: 87px 8.6% 120px;
 }
 @media screen and (max-width: 1023px) {
@@ -1915,7 +1966,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog {
-    padding: 65px 7.8%;
+    padding: 57px 7.8% 65px;
   }
 }
 
@@ -1957,7 +2008,7 @@ button,
   margin: 0;
   margin-bottom: 48px;
   text-align: center;
-  color: #011C40;
+  color: #011c40;
 }
 @media screen and (max-width: 1023px) {
   .catalog__title {
@@ -1969,6 +2020,7 @@ button,
   .catalog__title {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 30px;
   }
 }
 
@@ -2033,12 +2085,12 @@ button,
 .catalog__item {
   padding: 30px 9.6% 35px;
   min-height: 386px;
-  background-color: #011C40;
+  background-color: #011c40;
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  color: #F9FBFD;
+  color: #f9fbfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2061,7 +2113,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item {
-    padding: 35px 9.6%;
+    padding: 29px 9.6% 35px;
   }
 }
 
@@ -2143,6 +2195,12 @@ button,
     background-image: url("../img/olympia-tablet.jpg");
   }
 }
+@media screen and (max-width: 767px) {
+  .catalog__item--olympia {
+    background-image: url("../img/olympia-mobile.jpg");
+  }
+}
+
 .catalog__item--avrora {
   background-image: url("../img/avrora-desktop.jpg");
 }
@@ -2212,9 +2270,14 @@ button,
     margin-left: 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .catalog__item-title--down {
+    margin-bottom: -17px;
+  }
+}
 @media screen and (max-width: 600px) and (min-width: 510px) {
   .catalog__item-title--down {
-    color: #011C40;
+    color: #011c40;
     font-family: "Montserrat Bold", "Arial", sans-serif;
     font-weight: 700;
   }
@@ -2237,6 +2300,11 @@ button,
     margin-bottom: 23px;
   }
 }
+@media screen and (max-width: 767px) {
+  .catalog__item-text:last-of-type {
+    margin-bottom: 26px;
+  }
+}
 
 .catalog__item-text--subtitle {
   font-family: "Montserrat Medium", "Arial", sans-serif;
@@ -2245,8 +2313,8 @@ button,
 }
 
 .catalog__button {
-  background-color: #F9FBFD;
-  color: #011C40;
+  background-color: #f9fbfd;
+  color: #011c40;
   font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -2275,12 +2343,12 @@ button,
 @media screen and (max-width: 767px) {
   .catalog__button {
     width: calc(190px + (100vw - 600px) * -50 / -167);
-    padding: 14px 23.6%;
+    padding: 9px 23.6% 7px;
   }
 }
 @media screen and (max-width: 600px) {
   .catalog__button {
-    width: calc(210px + (100vw - 320px) * -198 / -280);
+    width: calc(220px + (100vw - 320px) * -188 / -280);
     max-width: 408px;
   }
 }
@@ -2293,7 +2361,7 @@ button,
 
 .catalog__button:hover,
 .catalog__button:focus {
-  background-color: #B2DAFA;
+  background-color: #b2dafa;
 }
 
 .page {
@@ -2305,7 +2373,7 @@ button,
 .page__wrapper {
   min-height: 100%;
   margin: 0 auto;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2316,7 +2384,7 @@ button,
 }
 
 .contacts {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   padding: 120px 7.5% 122px;
 }
 @media screen and (max-width: 1023px) {
@@ -2326,7 +2394,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .contacts {
-    padding: 65px 4.7%;
+    padding: 58px 4.7% 37px;
   }
 }
 
@@ -2396,14 +2464,20 @@ button,
   font-weight: 500;
   line-height: 27px;
   margin: 0;
-  margin-top: 2px;
-  margin-bottom: 32px;
-  color: #011C40;
+  margin-top: 24px;
+  margin-bottom: 33px;
+  color: #011c40;
 }
 @media screen and (max-width: 1023px) {
   .contacts__title {
-    margin-bottom: 24px;
-    margin-top: -1px;
+    margin-bottom: 27px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__title {
+    margin-bottom: 26px;
+    margin-top: 0;
   }
 }
 
@@ -2427,26 +2501,31 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #011C40;
+  color: #011c40;
 }
 
 .contacts__img {
   margin: 0;
-  margin-right: 6px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
 @media screen and (max-width: 1023px) {
+  .contacts__img--pin {
+    margin-top: 4px;
+  }
+}
+@media screen and (max-width: 767px) {
   .contacts__img--pin {
     margin-top: 8px;
   }
 }
 
 .contacts__img--phone {
-  vertical-align: top;
+  margin-top: 4px;
 }
 
-.contacts__item {
+.contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2458,10 +2537,16 @@ button,
           flex-direction: row;
   margin: 0;
   margin-bottom: 23px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1023px) {
-  .contacts__item {
+  .contacts__link {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__link {
+    margin-bottom: 22px;
   }
 }
 
@@ -2480,10 +2565,6 @@ button,
   color: #00b2ff;
 }
 
-.contacts__link {
-  cursor: pointer;
-}
-
 .contacts iframe {
   border: none;
   display: block;
@@ -2493,6 +2574,11 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 1024px) {
+  .contacts iframe {
+    max-width: 560px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .contacts iframe {
@@ -2507,7 +2593,7 @@ button,
   }
 }
 
-#map__container {
+.map__container {
   position: relative;
   width: calc(200px + 360 * (100vw - 500px) / 866);
   height: 306px;
@@ -2519,19 +2605,19 @@ button,
   background-position: center;
 }
 @media (min-width: 1024px) {
-  #map__container {
+  .map__container {
     max-width: 560px;
   }
 }
 @media screen and (max-width: 1023px) {
-  #map__container {
+  .map__container {
     width: 324px;
     height: 335px;
     background-image: url("../img/map-tablet.jpg");
   }
 }
 @media screen and (max-width: 767px) {
-  #map__container {
+  .map__container {
     width: calc(290px + (100vw - 320px) * -404 / -447);
     height: calc(316px + (100vw - 320px) * -474 / -447);
     background-image: url("../img/map-mobile.jpg");
@@ -2556,6 +2642,11 @@ button,
 @media screen and (max-width: 1023px) {
   .social__list {
     margin-top: 3px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .social__list {
+    margin-top: 6px;
   }
 }
 
@@ -2594,7 +2685,7 @@ button,
 }
 
 .social__link {
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .social__link:hover,

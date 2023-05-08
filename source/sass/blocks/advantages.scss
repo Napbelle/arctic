@@ -9,14 +9,14 @@
   @media screen and (max-width: 1023px) {
     background-image: url("../img/advantages-tablet.jpg");
     padding: 89px 5.9% 100px;
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../img/advantages-mobile.jpg");
+    padding: 55px 4.7% 65px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-  background-image: url("../img/advantages-mobile.jpg");
-  padding: 65px 4.7%;
-}
-
-}
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
@@ -25,18 +25,18 @@
 
   @media (min-width: 1024px) {
     max-width: 1160px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 678px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
+    max-width: 694px;
+  }
 }
 
-@media screen and (max-width: 1023px) {
-  width: 678px;
-}
-
-@media screen and (max-width: 767px) {
-  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
-  max-width: 694px;
-}
-
-}
 .advantages__title {
   font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 28px;
@@ -47,16 +47,24 @@
   margin-bottom: 50px;
   text-align: center;
 
+  br {
+    display: none;
+  }
+
   @media screen and (max-width: 1023px) {
     font-size: 26px;
     line-height: 39px;
-}
+  }
 
-@media screen and (max-width: 767px) {
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 40px;
-}
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .advantages__list {
@@ -78,14 +86,13 @@
     grid-template-columns: repeat(3, 206px);
     grid-column-gap: 4.4%;
     grid-row-gap: 40px;
+  }
 
-}
-
-@media screen and (max-width: 767px) {
-  grid-template-columns: minmax(290px, 731px);
-  grid-row-gap: 30px;
-  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
-}
+  @media screen and (max-width: 767px) {
+    grid-template-columns: minmax(290px, 731px);
+    grid-row-gap: 30px;
+    width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
+  }
 }
 
 .advantages__item-title {
@@ -99,52 +106,64 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 1023px) {
-  line-height: 25.2px;
-  margin-bottom: 9px;
-}
+  br {
+    display: none;
+  }
 
-@media screen and (max-width: 767px) {
-  font-size: 18px;
-  line-height: 25.2px;
-  margin-bottom: 20px;
-}
+  @media screen and (max-width: 1023px) {
+    line-height: 25.2px;
+    margin-bottom: 9px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: 10px;
+  }
 }
 
 .advantages__item-title--excursion {
   @media screen and (max-width: 1023px) {
-margin-bottom: 20px;
-}
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
 }
 
 .advantages__img {
   margin-bottom: 18px;
 
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 18px;
-}
+  @media screen and (max-width: 767px) {
+    margin-bottom: 19px;
+  }
 }
 
-.advantages__img--cruise{
-@media screen and (max-width: 1023px) {
-  width:21px;
-  height: 26px;
+.advantages__img--cruise {
+  @media screen and (max-width: 1023px) {
+    width: 21px;
+    height: 26px;
+  }
 }
-}
+
 .advantages__img--check {
   @media screen and (max-width: 1023px) {
-    width:27px;
+    width: 27px;
     height: 26px;
+  }
+}
 
-  }
-  }
 .advantages__img--excursion {
   @media screen and (max-width: 1023px) {
-    width:36px;
+    width: 36px;
     height: 26px;
-
   }
-  }
+}
 
 .advantages__text {
   font-family: "Montserrat Regular", "Arial", sans-serif;
@@ -165,12 +184,19 @@ margin-bottom: 20px;
   @media screen and (max-width: 1023px) {
     padding: 26px 16px 23px 20px;
     min-height: 310px;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    padding: 25px 6.9% 21px;
+    min-height: 249px;
+    width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
+  }
 }
 
 
-@media screen and (max-width: 767px) {
-  padding: 25px 6.9%;
-  min-height: 249px;
-  width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
-}
+.advantages__item--cruise {
+  @media screen and (max-width: 767px) {
+    padding: 25px 6.9% 23px;
+  }
 }
