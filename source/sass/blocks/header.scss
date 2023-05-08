@@ -5,15 +5,17 @@
   background-size: cover;
   background-position: center;
   padding: 35px 7.5%;
-  box-shadow: 0 4px 4px $color-transparent;
+
 
   @media (min-width: 1024px) {
   min-height: 650px;
+  box-shadow: 0 4px 4px $color-transparent;
+  z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1023px) {
   background-image: url("../img/welcome-tablet.jpg");
-  padding: 35px 5.9%;
+  padding: 30px 5.9%;
   height: 638px;
 }
 

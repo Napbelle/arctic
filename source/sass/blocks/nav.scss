@@ -24,7 +24,7 @@
   line-height: 19.5px;
 
   @media (min-width: 1024px) {
-    max-width: 599px;
+    max-width: 594px;
   }
 
   @media screen and (max-width: 1023px) {
@@ -35,6 +35,8 @@
 }
 
 .nav__list--header {
+//  margin-top: 2px;
+//  margin-left: 20px;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -139,7 +141,7 @@ color: $color-deep-sky-blue;
   margin-right: 5.5%;
 
   @media screen and (max-width: 1023px) {
-    margin-right: 22px;
+    margin-right: 22.5px;
   }
 
   @media screen and (max-width: 767px) {
@@ -163,7 +165,12 @@ color: $color-deep-sky-blue;
   margin-right: 0;
 }
 
+.nav__item--footer {
 
+  @media screen and (max-width: 1023px) {
+    margin-right: 23px;
+  }
+}
 .nav__toggle {
   display: none;
   @media screen and (max-width: 767px) {

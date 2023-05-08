@@ -4,11 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 120px 7.5%;
+  padding: 110px 7.5% 118px;
 
   @media screen and (max-width: 1023px) {
     background-image: url("../img/advantages-tablet.jpg");
-    padding: 100px 5.9%;
+    padding: 89px 5.9% 100px;
 }
 
 @media screen and (max-width: 767px) {
@@ -44,7 +44,7 @@
   line-height: 42px;
   color: $color-tangaroa;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
 
   @media screen and (max-width: 1023px) {
@@ -95,12 +95,13 @@
   line-height: 27px;
   color: $color-tangaroa;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
 
   @media screen and (max-width: 1023px) {
   line-height: 25.2px;
+  margin-bottom: 9px;
 }
 
 @media screen and (max-width: 767px) {
@@ -109,13 +110,42 @@
   margin-bottom: 20px;
 }
 }
+
+.advantages__item-title--excursion {
+  @media screen and (max-width: 1023px) {
+margin-bottom: 20px;
+}
+}
+
 .advantages__img {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
   @media screen and (max-width: 1023px) {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 }
+
+.advantages__img--cruise{
+@media screen and (max-width: 1023px) {
+  width:21px;
+  height: 26px;
+}
+}
+.advantages__img--check {
+  @media screen and (max-width: 1023px) {
+    width:27px;
+    height: 26px;
+
+  }
+  }
+.advantages__img--excursion {
+  @media screen and (max-width: 1023px) {
+    width:36px;
+    height: 26px;
+
+  }
+  }
+
 .advantages__text {
   font-family: "Montserrat Regular", "Arial", sans-serif;
   font-size: 14px;
@@ -133,7 +163,7 @@
   background-color: $color-alice-blue;
 
   @media screen and (max-width: 1023px) {
-    padding: 26px 16px 25px 20px;
+    padding: 26px 16px 23px 20px;
     min-height: 310px;
 }
 

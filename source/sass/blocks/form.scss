@@ -4,11 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 50px 11.9%;
+  padding: 50px 11.9% 48px;
 
   @media screen and (max-width: 1023px) {
     background-image: url("../img/form-tablet.jpg");
-    padding: 100px 175px;
+    padding: 97px 175px 100px;
   }
 
 @media screen and (max-width: 767px) {
@@ -62,7 +62,9 @@
   font-weight: 700;
   line-height: 60px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+
   br {
     display: none;
   }
@@ -76,7 +78,7 @@
   @media screen and (max-width: 1023px) {
     font-size: 34px;
     line-height: 51px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     text-align: center;
     br {
       display: none;
@@ -98,7 +100,7 @@
   @media screen and (max-width: 1023px) {
     font-size: 18px;
     line-height: 27px;
-    margin: 0 33px 60px;
+    margin: 0 33px 53px;
     text-align: center;
   }
 
@@ -120,7 +122,7 @@
   width: calc(350px + (403 - 350) * ((100vw - 500px) / (1366 - 500)));
   border: none;
   margin: 0;
-  padding: 50px 4.8%;
+  padding: 42px 4.8%;
   flex-wrap: wrap;
   flex-direction: column;
   background-color: $color-tangaroa;
@@ -131,7 +133,7 @@
   }
 
   @media screen and (max-width: 1023px) {
-    padding: 50px;
+    padding: 45px 50px;
     width: 403px;
 }
 
@@ -167,8 +169,12 @@
   font-weight: 500;
   line-height: 27px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   color: $color-alice-blue;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 25px;
+  }
 
   @media screen and (max-width: 767px) {
     line-height: 25.2px;
@@ -228,9 +234,11 @@ max-width: 540px;
   line-height: 13px;
   color: $color-alice-blue;
   margin: 0;
+  margin-top: 3px;
   cursor: pointer;
   width: auto;
   box-sizing: border-box;
+
 
   @media screen and (max-width: 767px) {
     line-height: 12px;
@@ -291,7 +299,7 @@ max-width: 540px;
 .form__button {
   box-sizing: border-box;
   width: calc(270px + (303 - 270) * ((100vw - 500px) / (1366 - 500)));
-  padding: 15px 29%;
+  padding: 13px 29% 10px;
   font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -307,6 +315,7 @@ max-width: 540px;
 
 @media screen and (max-width: 1023px) {
   width: 303px;
+  margin-top: 2px;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,9 +1,9 @@
 .about-us {
   background-color: $color-whisper;
-  padding: 123px 7.5% 145px;
+  padding: 120px 7.5% 145px;
 
   @media screen and (max-width: 1023px) {
-    padding: 100px 5.9%;
+    padding: 100px 5.9% 95px;
 }
 
 @media screen and (max-width: 767px) {
@@ -14,7 +14,6 @@
 .about-us__wrapper {
   display: flex;
   flex-direction: row;
-  //justify-content: space-between;
   margin: 0 auto;
   align-items: center;
 
@@ -36,12 +35,11 @@
 }
 
 .about-us__text-wrapper {
-
   @media (min-width: 1366px) {
     min-width: 512px;
     margin-right: 88px;
   }
-//  width: calc(400px + (100vw - 1366px) * (400 - 512) / (1024 - 1366));
+
   width: calc(373px + (512 - 373) * ((100vw - 500px) / (1366 - 500)));
   max-width: 512px;
   margin-right: calc(40px + (100vw - 1024px) * (40 - 88) / (1024 - 1366));
@@ -52,9 +50,11 @@
 
   @media (min-width: 1024px) {
   max-width: 512px;
+
 }
 @media screen and (max-width: 1023px) {
   width: 324px;
+  margin-right: 30px;
 }
 @media screen and (max-width: 767px) {
   width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
@@ -73,13 +73,22 @@
   font-weight: 600;
   line-height: 42px;
   color: $color-tangaroa;
-  margin: 0;
-  margin-bottom: 40px;
+  margin:0;
+  margin-bottom: 23px;
+
+  br {
+display: none;
+  }
 
   @media screen and (max-width: 1023px) {
     font-size: 26px;
     line-height: 36.4px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+
+  br {
+    display: block;
+      }
 }
 
 @media screen and (max-width: 767px) {

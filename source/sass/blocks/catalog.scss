@@ -1,11 +1,11 @@
 .catalog {
   background-color: $color-whisper;
-  padding: 108px 8.6%;
+  padding: 87px 8.6% 120px;
 
   @media screen and (max-width: 1023px) {
-    padding: 100px 60px;
+    padding: 90px 60px 100px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   padding: 65px 7.8%;
 }
 }
@@ -36,7 +36,7 @@
   font-weight: 600;
   line-height: 42px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
   text-align: center;
   color: $color-tangaroa;
 
@@ -98,7 +98,7 @@ width: calc(270px + (100vw - 320px) * (270 - 646) / (320 - 767));
 }
 
 .catalog__item {
-  padding: 35px 9.6%;
+  padding: 30px 9.6% 35px;
   min-height: 386px;
   background-color: $color-tangaroa;
   cursor: pointer;
@@ -114,6 +114,7 @@ width: calc(270px + (100vw - 320px) * (270 - 646) / (320 - 767));
 
   @media screen and (max-width: 1023px) {
     padding: 35px;
+    padding-top: 29px;
 }
 @media screen and (max-width: 767px) {
 padding: 35px 9.6%;
@@ -231,7 +232,7 @@ background-image: url("../img/astoria-desktop.jpg");
 }
 
 .catalog__item-title--up {
-margin-bottom: 25px;
+margin-bottom: 13px;
 }
 
 .catalog__item:hover .catalog__item-title--down,
@@ -240,6 +241,14 @@ margin-bottom: 25px;
 }
 
 .catalog__item-title--down {
+  margin-bottom: -12px;
+  margin-left: 3px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: -8px;
+    margin-left: 0;
+  }
+
   @media screen and (max-width: 600px) and (min-width: 510px) {
 color: $color-tangaroa;
 font-family: "Montserrat Bold", "Arial", sans-serif;
@@ -253,17 +262,20 @@ font-weight: 700;
   font-weight: 400;
   line-height: 19.6px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .catalog__item-text:last-of-type {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 23px;
+}
 }
 
 .catalog__item-text--subtitle {
   font-family: "Montserrat Medium", "Arial", sans-serif;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .catalog__button {
@@ -272,13 +284,16 @@ color: $color-tangaroa;
 font-family: "Montserrat Semibold", "Arial", sans-serif;
 font-size: 14px ;
 font-weight: 600;
-line-height: 21px;
-padding: 14px 18%;
+line-height: 23px;
+padding: 7px 18% 10px;
 text-align: center;
 margin: 0;
 display: block;
 width: calc(100px + (210 - 100) * ((100vw - 500px) / (1366 - 500)));
+
+@media screen and (min-width: 1300px) {
 max-width: 210px;
+}
 
 @media screen and (max-width: 1300px) {
   width: 210px;
