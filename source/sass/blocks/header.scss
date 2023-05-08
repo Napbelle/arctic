@@ -11,19 +11,13 @@
   min-height: 650px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
   background-image: url("../img/welcome-tablet.jpg");
   padding: 35px 5.9%;
   height: 638px;
 }
 
 @media screen and (max-width: 767px) {
-  background-image: url("../img/welcome-tablet.jpg");
-  padding: 20px 4.7%;
-  max-height: 500px;
-}
-
-@media screen and (max-width: 430px) {
   background-image: url("../img/welcome-mobile.jpg");
   padding: 20px 4.7%;
   min-height: 500px;
