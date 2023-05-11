@@ -1,5 +1,5 @@
 .about-us {
-  background-color: $color-whisper;
+  background-color: $color-alice-blue;
   padding: 120px 7.5% 145px;
 
   @media screen and (max-width: 1023px) {
@@ -122,6 +122,6 @@
 
   @media screen and (max-width: 767px) {
     width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
-    height: calc(155.9px + (100vw - 320px) * (155.9 - 389.8) / (320 - 767));
+    height: calc(155.9px + (100vw - 320px) * (155.9 - 372.6) / (320 - 767));
   }
 }

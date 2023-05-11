@@ -4,7 +4,7 @@
   height: 306px;
   margin: 0;
   padding: 0;
-  background-image: url("../img/map-desktop.jpg");
+  background-image: url("../img/map-desktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,12 +16,12 @@
   @media screen and (max-width: 1023px) {
     width: 324px;
     height: 335px;
-    background-image: url("../img/map-tablet.jpg");
+    background-image: url("../img/map-tablet.webp");
   }
 
   @media screen and (max-width: 767px) {
     width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
-    height: calc(316px + (100vw - 320px) * (316 - 790) / (320 - 767));
-    background-image: url("../img/map-mobile.jpg");
+    height: calc(316px + (100vw - 320px) * (316 - 755.2) / (320 - 767));
+    background-image: url("../img/map-mobile.webp");
   }
 }

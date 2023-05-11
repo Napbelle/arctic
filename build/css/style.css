@@ -599,7 +599,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .header {
-    background-image: url("../img/welcome-mobile.jpg");
+    background-image: url("../img/welcome-mobile.webp");
     padding: 20px 5%;
     min-height: 500px;
   }
@@ -747,21 +747,30 @@ button,
   }
 }
 
-.footer__img {
-  margin: 0;
-  margin-right: 40px;
-}
 @media screen and (max-width: 1023px) {
   .footer__img {
     width: 38px;
     height: 20px;
-    margin-right: 25px;
   }
 }
 @media screen and (max-width: 767px) {
   .footer__img {
     max-width: 42px;
     max-height: 22px;
+  }
+}
+
+.footer__logo {
+  margin: 0;
+  margin-right: 40px;
+}
+@media screen and (max-width: 1023px) {
+  .footer__logo {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__logo {
     margin: 0;
     margin-bottom: 30px;
   }
@@ -813,7 +822,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .advantages {
-    background-image: url("../img/advantages-mobile.jpg");
+    background-image: url("../img/advantages-mobile.webp");
     padding: 55px 4.7% 65px;
   }
 }
@@ -1044,7 +1053,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .form {
-    background-image: url("../img/form-mobile.jpg");
+    background-image: url("../img/form-mobile.webp");
     padding: 68px 4.7% 65px;
     min-height: 760px;
   }
@@ -1628,14 +1637,14 @@ button,
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media screen and (max-width: 767px) {
   .nav__link--header {
     color: #011c40;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
 }
 
@@ -1808,7 +1817,7 @@ button,
 }
 
 .about-us {
-  background-color: #e5e5e5;
+  background-color: #f9fbfd;
   padding: 120px 7.5% 145px;
 }
 @media screen and (max-width: 1023px) {
@@ -1951,12 +1960,12 @@ button,
 @media screen and (max-width: 767px) {
   .about-us__img {
     width: calc(290px + (100vw - 320px) * -404 / -447);
-    height: calc(155.9px + (100vw - 320px) * -233.9 / -447);
+    height: calc(155.9px + (100vw - 320px) * -216.7 / -447);
   }
 }
 
 .catalog {
-  background-color: #e5e5e5;
+  background-color: #f9fbfd;
   padding: 87px 8.6% 120px;
 }
 @media screen and (max-width: 1023px) {
@@ -2131,6 +2140,10 @@ button,
   display: block;
 }
 
+.catalog__list:focus-within {
+  outline: solid 1px #011c40;
+}
+
 .catalog__item--astoria {
   background-image: url("../img/astoria-desktop.jpg");
 }
@@ -2141,7 +2154,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--astoria {
-    background-image: url("../img/astoria-mobile.jpg");
+    background-image: url("../img/astoria-mobile.webp");
   }
 }
 
@@ -2155,7 +2168,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--elain {
-    background-image: url("../img/minion-mobile.jpg");
+    background-image: url("../img/minion-mobile.webp");
   }
 }
 
@@ -2169,7 +2182,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--atlantis {
-    background-image: url("../img/atlantis-mobile.jpg");
+    background-image: url("../img/atlantis-mobile.webp");
   }
 }
 
@@ -2183,7 +2196,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--odessey {
-    background-image: url("../img/odessey-mobile.jpg");
+    background-image: url("../img/odessey-mobile.webp");
   }
 }
 
@@ -2197,7 +2210,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--olympia {
-    background-image: url("../img/olympia-mobile.jpg");
+    background-image: url("../img/olympia-mobile.webp");
   }
 }
 
@@ -2211,7 +2224,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--avrora {
-    background-image: url("../img/avrora-mobile.jpg");
+    background-image: url("../img/avrora-mobile.webp");
   }
 }
 
@@ -2225,7 +2238,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--leonor {
-    background-image: url("../img/leonor-mobile.jpg");
+    background-image: url("../img/leonor-mobile.webp");
   }
 }
 
@@ -2239,7 +2252,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .catalog__item--minion {
-    background-image: url("../img/minion-mobile.jpg");
+    background-image: url("../img/minion-mobile.webp");
   }
 }
 
@@ -2384,7 +2397,7 @@ button,
 }
 
 .contacts {
-  background-color: #e5e5e5;
+  background-color: #f9fbfd;
   padding: 120px 7.5% 122px;
 }
 @media screen and (max-width: 1023px) {
@@ -2501,7 +2514,6 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #011c40;
 }
 
 .contacts__img {
@@ -2538,6 +2550,10 @@ button,
   margin: 0;
   margin-bottom: 23px;
   cursor: pointer;
+  color: #011c40;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (max-width: 1023px) {
   .contacts__link {
@@ -2599,7 +2615,7 @@ button,
   height: 306px;
   margin: 0;
   padding: 0;
-  background-image: url("../img/map-desktop.jpg");
+  background-image: url("../img/map-desktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2613,14 +2629,14 @@ button,
   .map__container {
     width: 324px;
     height: 335px;
-    background-image: url("../img/map-tablet.jpg");
+    background-image: url("../img/map-tablet.webp");
   }
 }
 @media screen and (max-width: 767px) {
   .map__container {
     width: calc(290px + (100vw - 320px) * -404 / -447);
-    height: calc(316px + (100vw - 320px) * -474 / -447);
-    background-image: url("../img/map-mobile.jpg");
+    height: calc(316px + (100vw - 320px) * -439.2 / -447);
+    background-image: url("../img/map-mobile.webp");
   }
 }
 

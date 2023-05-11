@@ -123,12 +123,12 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  width:fit-content;
 }
 
 .nav__link--header {
   @media screen and (max-width: 767px) {
     color: $color-tangaroa;
-    width: fit-content;
   }
 }
 

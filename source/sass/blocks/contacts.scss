@@ -1,5 +1,5 @@
 .contacts {
-  background-color: $color-whisper;
+  background-color: $color-alice-blue;
   padding: 120px 7.5% 122px;
 
   @media screen and (max-width: 1023px) {
@@ -85,7 +85,6 @@
   margin: 0;
   padding: 0;
   justify-content: center;
-  color: $color-tangaroa;
 }
 
 .contacts__img {
@@ -115,6 +114,8 @@
   margin: 0;
   margin-bottom: 23px;
   cursor: pointer;
+  color: $color-tangaroa;
+  width: fit-content;
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 20px;
