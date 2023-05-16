@@ -8,7 +8,8 @@
   <meta name="description" content="Antarctic Cruise">
   <title>Antarctic Cruise</title>
   <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
-  <link rel="preload" href="img/welcome-desktop.jpg" as="image" imagesrcset="img/welcome-tablet.jpg 1024w, img/welcome-mobile.webp 767w">
+  <link rel="preload" href="img/welcome-desktop.jpg" as="image"
+    imagesrcset="img/welcome-tablet.jpg 1024w, img/welcome-mobile.webp 767w" imagesizes="100vw">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="img/favicon.ico"><!-- 32×32 -->
 </head>
@@ -19,7 +20,17 @@
       <div class="header__wrapper">
         <div class="header__first-row">
           <a class="header__logo" href="index.html">
-            <img class="header__img" src="img/logo-desktop.svg" width="70" height="38" alt="Логотип Antarctic Cruise">
+            <svg class="header__img" width="70" height="38" viewBox="0 0 70 38" fill="#F9FBFD"
+              xmlns="http://www.w3.org/2000/svg">
+
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" />
+
+            </svg>
           </a>
           <nav class="nav nav--header">
             <h2 class="visually-hidden">Меню сайта</h2>
@@ -36,13 +47,7 @@
               <li class="nav__item nav__item--header">
                 <a class="nav__link nav__link--header" href="#contacts"> Контакты</a>
               </li>
-
             </ul>
-            <a class="nav__logo" href="index.html">
-
-              <img class="nav__logo-img" src="img/logo-dark.svg" width="42" height="22" alt="Логотип Antarctic Cruise">
-
-            </a>
             <button class="nav__toggle" type="button">
               <svg class="nav__img nav__img--closed" width="24" height="12">
                 <use xlink:href="img/sprite.svg#icon-closed"></use>
@@ -56,7 +61,7 @@
         </div>
         <div class="welcome">
           <p class="welcome__title">Круизы в&nbsp;Антарктику </p>
-          <p class="welcome__text">Волшебный мир <br> айсбергов и&nbsp;пингвинов</p>
+          <p class="welcome__text">Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </div>
     </header>
@@ -65,7 +70,7 @@
       <section class="about-us">
         <div class="about-us__wrapper">
           <div class="about-us__text-wrapper">
-            <h2 class="about-us__title">Путешествие <br> на&nbsp;край Земли</h2>
+            <h2 class="about-us__title">Путешествие на&nbsp;край Земли</h2>
             <p class="about-us__text">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным
               миром
               Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги,
@@ -94,7 +99,7 @@
                 <svg class="advantages__img advantages__img--cruise" width="27" height="32">
                   <use xlink:href="img/sprite.svg#cruise"></use>
                 </svg>
-                <span> Небольшой <br> круизный лайнер</span>
+                <span> Небольшой круизный лайнер</span>
               </h3>
               <p class="advantages__text">Круизный лайнер, рассчитанный всего лишь на&nbsp;300 гостей, поможет избежать
                 шума
@@ -107,7 +112,7 @@
                 <svg class="advantages__img advantages__img--check" width="38" height="32">
                   <use xlink:href="img/sprite.svg#check"></use>
                 </svg>
-                <span>Система <br> все включено</span>
+                <span>Система все&nbsp;включено</span>
               </h3>
               <p class="advantages__text">Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда
                 и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.
@@ -118,7 +123,7 @@
                 <svg class="advantages__img advantages__img--excursion" width="44" height="32">
                   <use xlink:href="img/sprite.svg#excursion"></use>
                 </svg>
-                <span>Экскурсионные<br>туры на&nbsp;Zodiac</span>
+                <span>Экскурсионные туры на&nbsp;Zodiac</span>
               </h3>
               <p class="advantages__text">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных
                 лодках
@@ -263,8 +268,8 @@
               до&nbsp;50%</p>
           </div>
           <div class="form__content-wrapper">
-            <div class="form__data form__data--index" data-form-validate="data-form-validate" data-callback="base">
-              <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__data form__data--index" data-form-validate="data-form-validate" data-callback="base"  data-message-success="Поле обязательно к заполнению">
+              <form class="form__form" method="post" action="https://echo.htmlacademy.ru/" >
                 <fieldset class="form__fieldset">
                   <legend class="form__legend">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее
                     время</legend>
@@ -287,7 +292,8 @@
                     <label class="visually-hidden" for="email">Адрес электронной почты</label>
                     <input class="form__input" placeholder="Email" type="email" name="email" id="email" required>
                   </div>
-                  <div class="form__button-wrapper" data-validate-type="checkbox"
+                  <div class="form__button-wrapper">
+                    <div class ="form__checkbox-wrapper" data-validate-type="checkbox"
                     data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
                     data-required="data-required">
                     <label class="form__label form__label--checkbox">
@@ -296,6 +302,7 @@
                       <span class="form__checkbox-text">Я согласен на&nbsp;обработку моих&nbsp;персональных
                         данных</span>
                     </label>
+                    </div>
                     <button class="form__button" type="submit">Оставить заявку</button>
                   </div>
                 </fieldset>
@@ -324,7 +331,7 @@
                     <use xlink:href="img/sprite.svg#pin"></use>
                   </svg>
 
-                  <span class="contacts__text"> г. Санкт Петербург, <br> ул. Большая Конюшенная, 19/8
+                  <span class="contacts__text"> г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная,&nbsp;19/8
                   </span>
                 </a>
               </li>
@@ -346,7 +353,16 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">
-          <img class="footer__img" src="img/logo-desktop.svg" width="70" height="38" alt="Логотип Antarctic Cruise">
+          <svg class="footer__img" width="70" height="38" viewBox="0 0 70 38" fill="#F9FBFD"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z" />
+          </svg>
         </a>
         <div class="footer__nav-wrapper">
           <nav class="nav nav--footer">
@@ -364,6 +380,7 @@
               <li class="nav__item nav__item--footer">
                 <a class="nav__link nav__link--footer" href="#contacts"> Контакты</a>
               </li>
+              <li class="nav__item nav__item--footer">
             </ul>
           </nav>
           <nav class="social">

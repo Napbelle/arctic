@@ -13,11 +13,13 @@
 
   @media screen and (max-width: 767px) {
     margin-top: 6px;
+
   }
 }
 
 .social__item {
   margin-right: 27px;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1023px) {
     margin-right: 22.3px;
@@ -54,7 +56,6 @@
   color: $color-alice-blue;
 }
 
-.social__link:hover,
-.social__link:focus {
+.social__link:hover {
   color: $color-deep-sky-blue;
 }

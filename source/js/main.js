@@ -51,14 +51,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const button = document.querySelector('.nav__toggle');
 const nav = document.querySelector('.nav__list--header');
-const logo = document.querySelector('.header__img');
+const logo = document.querySelector('.header__logo');
 const imgOpened = document.querySelector('.nav__img--opened');
 const imgClosed = document.querySelector('.nav__img--closed');
-const imgLogo = document.querySelector('.nav__logo-img');
 button.onclick = function () {
   nav.classList.toggle('is-active');
-  logo.classList.toggle('is-invalid');
+  logo.classList.toggle('is-opened');
   imgOpened.classList.toggle('is-active');
   imgClosed.classList.toggle('is-invalid');
-  imgLogo.classList.toggle('is-active');
 };

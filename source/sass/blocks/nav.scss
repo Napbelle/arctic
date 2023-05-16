@@ -17,20 +17,20 @@
   margin: 0;
   padding: 0;
   // width: calc(550px + (100vw - 1024px) * (550 - 599) / (1024 - 1366));
-  width: 599px;
+  width: 650px;
   font-family: "Montserrat Medium", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 19.5px;
 
   @media (min-width: 1024px) {
-    max-width: 594px;
+ //   max-width: 594px;
   }
 
   @media screen and (max-width: 1023px) {
     font-size: 14px;
     line-height: 17px;
-    width: 500px;
+    width: 550px;
   }
 }
 
@@ -52,6 +52,7 @@
     color: $color-tangaroa;
     margin: 0;
     margin-left: 13px;
+
   }
 }
 
@@ -67,8 +68,7 @@
   }
 }
 
-.nav__img:hover,
-.nav__img:focus {
+.nav__img:hover {
   @media screen and (max-width: 767px) {
     color: $color-deep-sky-blue;
   }
@@ -80,8 +80,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 285px;
-    min-height: 568px;
+    width: 89%;
     background-color: $color-alice-blue;
     color: $color-tangaroa;
     font-family: "Montserrat Medium", "Arial", sans-serif;
@@ -94,6 +93,7 @@
     right: 0;
     z-index: 2;
     align-self: flex-end;
+    height: 100%;
   }
 
   @media screen and (max-width: 319px) {
@@ -102,15 +102,19 @@
 }
 
 .nav__list--footer {
+  margin-right: 30px;
+
   @media screen and (max-width: 1023px) {
     font-size: 12px;
     line-height: 14.6px;
     width: 441px;
+
   }
 
   @media screen and (max-width: 767px) {
+    margin-right: 0;
     flex-direction: column;
-    width: calc(290px + (100vw - 320px) * (290 - 731) / (320 - 767));
+    width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
   }
 }
 
@@ -132,13 +136,13 @@
   }
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover {
   color: $color-deep-sky-blue;
 }
 
 .nav__item {
   margin-right: 5.5%;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1023px) {
     margin-right: 22.5px;
@@ -197,20 +201,3 @@
   }
 }
 
-.nav__logo-img {
-  display: none;
-}
-
-.nav__logo-img.is-active {
-  @media screen and (max-width: 767px) {
-    display: block;
-    position: absolute;
-    top: 18px;
-    right: 226px;
-    z-index: 10;
-  }
-
-  @media screen and (max-width: 319px) {
-    right: 65.2%;
-  }
-}

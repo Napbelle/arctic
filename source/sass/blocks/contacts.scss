@@ -3,7 +3,7 @@
   padding: 120px 7.5% 122px;
 
   @media screen and (max-width: 1023px) {
-    padding: 100px 45px;
+    padding: 100px 5.8%;
   }
 
   @media screen and (max-width: 767px) {
@@ -24,7 +24,8 @@
   }
 
   @media screen and (max-width: 1023px) {
-    width: 678px;
+    //width: 678px;
+    width: calc(678px + (100vw - 768px) * (678 - 903.4) / (768 - 1023));
   }
 
   @media screen and (max-width: 767px) {
@@ -42,7 +43,8 @@
   }
 
   @media screen and (max-width: 1023px) {
-    width: 324px;
+ //   width: 324px;
+ width: calc(324px + (100vw - 768px) * (324 - 430.9) / (768 - 1023));
   }
 
   @media screen and (max-width: 767px) {
@@ -109,7 +111,7 @@
 
 .contacts__link {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   flex-direction: row;
   margin: 0;
   margin-bottom: 23px;
@@ -130,17 +132,7 @@
   margin-bottom: 0;
 }
 
-.contacts__text {
-  @media (min-width: 1024px) {
-    br {
-      display: none;
-    }
-  }
-}
-
-
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover {
   color: $color-deep-sky-blue;
 }
 
@@ -150,22 +142,21 @@
   display: block;
   width: calc(200px + (560 - 200) * ((100vw - 500px) / (1366 - 500)));
   height: 306px;
-  background-image: url("../img/map-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
   @media (min-width: 1024px) {
     max-width: 560px;
   }
 
   @media screen and (max-width: 1023px) {
-    width: 324px;
-    height: 335px;
+   // width: 324px;
+   height: 335px;
+   width: calc(324px + (100vw - 768px) * (324 - 430.9) / (768 - 1023));
+  // height: calc(335px + (100vw - 768px) * (324 - 445.5) / (768 - 1023));
   }
 
   @media screen and (max-width: 767px) {
     width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
-    height: calc(316px + (100vw - 320px) * (316 - 790) / (320 - 767));
+   // height: calc(316px + (100vw - 320px) * (316 - 790) / (320 - 767));
+   height: 316px;
   }
 }
