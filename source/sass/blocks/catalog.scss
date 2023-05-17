@@ -22,8 +22,8 @@
   }
 
   @media screen and (max-width: 1023px) {
-   // width: 648px;
-   width: calc(648px + (100vw - 768px) * (648 - 862.5) / (768 - 1023));
+    // width: 648px;
+    width: calc(648px + (100vw - 768px) * (648 - 862.5) / (768 - 1023));
   }
 
   @media screen and (max-width: 767px) {
@@ -78,8 +78,8 @@
 
   @media screen and (max-width: 1023px) {
     grid-template-columns: repeat(2, minmax(309px, 410px));
-   // width: 648px;
-   width: calc(648px + (100vw - 768px) * (648 - 862.5) / (768 - 1023));
+    // width: 648px;
+    width: calc(648px + (100vw - 768px) * (648 - 862.5) / (768 - 1023));
     //grid-column-gap: 30px;
     grid-column-gap: 4.6%;
     padding: 0;
@@ -95,13 +95,13 @@
   @media screen and (max-width: 600px) {
     grid-template-columns: minmax(270px, 646px);
     width: calc(270px + (100vw - 320px) * (270 - 646) / (320 - 767));
-    grid-template-rows: calc(443.9px + (100vw - 320px) * (443.9 - 1060.9) / (320 - 767));
+    grid-template-rows: calc(386px + (100vw - 320px) * (443.9 - 922.5) / (320 - 767));
   }
 
   @media screen and (max-width: 319px) {
     grid-template-columns: minmax(230px, 270px);
     width: calc(230px + (100vw - 270px) * (230 - 270) / (270 - 319));
-   grid-template-rows:  calc(386px + (100vw - 270px) * (386 - 443.9) / (270 - 319));
+    grid-template-rows: calc(386px + (100vw - 270px) * (386 - 443.9) / (270 - 319));
   }
 }
 
@@ -134,7 +134,7 @@
 
   @media screen and (max-width: 767px) {
     padding: 29px 9.6% 35px;
-       height: calc(410px + (100vw - 600px) * (410 - 424.6) / (600 - 767));
+    height: calc(410px + (100vw - 600px) * (410 - 424.6) / (600 - 767));
   }
 
   @media screen and (min-width: 601px) and (max-width: 767px) {
@@ -142,13 +142,12 @@
   }
 
   @media screen and (max-width: 600px) {
-    height: calc(443.9px + (100vw - 320px) * (443.9 - 1060.9) / (320 - 767));
+    height: calc(386px + (100vw - 320px) * (443.9 - 922.5) / (320 - 767));
   }
 
   @media screen and (max-width: 319px) {
     height: calc(386px + (100vw - 270px) * (386 - 443.9) / (270 - 319));
   }
-
 }
 
 .catalog__item:hover,
@@ -161,34 +160,13 @@
 .catalog__text-wrapper {
   display: none;
   overflow: scroll;
-/*
-  @media screen and (max-width: 767px) {
-       height: calc(347.4px + (100vw - 600px) * (347.4 - 423.8) / (600 - 767));
-  }
-
-  @media screen and (min-width: 601px) and (max-width: 767px) {
-    min-height: 283.4px;
-  }
-
-  @media screen and (max-width: 600px) {
-    height: calc(379.9px + (100vw - 320px) * (379.9 - 996.9) / (320 - 767));
-  }
-
-  @media screen and (max-width: 319px) {
-    height: calc(322px + (100vw - 270px) * (386 - 379.9) / (270 - 319));
-  }
-*/
 }
 
 .catalog__item:hover .catalog__text-wrapper,
 .catalog__item:focus .catalog__text-wrapper {
   display: block;
 }
-/*
-.catalog__list:focus-within {
-  outline: solid 1px $color-tangaroa;
-}
-*/
+
 .catalog__item--astoria {
   background-image: url("../img/astoria-desktop.jpg");
 
@@ -307,7 +285,7 @@
   margin-left: 3px;
 
   @media screen and (max-width: 1023px) {
-    margin-bottom: -8px;
+    margin-bottom: -3px;
     margin-left: 0;
   }
 
@@ -366,17 +344,17 @@
   }
 
   @media screen and (max-width: 1023px) {
-  //  width: 239px;
-  width: calc(239px + (100vw - 768px) * (239 - 317) / (768 - 1023));
+    //  width: 239px;
+    width: calc(239px + (100vw - 768px) * (239 - 317) / (768 - 1023));
   }
 
   @media screen and (max-width: 767px) {
-    width: calc(198px + (100vw - 600px) * (198 - 230) / (600 - 767));
+    width: calc(197px + (100vw - 600px) * (198 - 230) / (600 - 767));
     padding: 9px 23.6% 7px;
   }
 
   @media screen and (max-width: 600px) {
-    width: calc(220px + (100vw - 320px) * (220 - 408.4) / (320 - 600));
+    width: calc(218px + (100vw - 320px) * (218 - 408.4) / (320 - 600));
     max-width: 408px;
   }
 
@@ -386,6 +364,6 @@
   }
 }
 
-.catalog__button:hover{
+.catalog__button:hover {
   background-color: $color-pale-cornflower-blue;
 }

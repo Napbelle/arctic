@@ -32,6 +32,7 @@
 
             </svg>
           </a>
+
           <nav class="nav nav--header">
             <h2 class="visually-hidden">Меню сайта</h2>
             <ul class="nav__list nav__list--header">
@@ -48,16 +49,17 @@
                 <a class="nav__link nav__link--header" href="#contacts"> Контакты</a>
               </li>
             </ul>
-            <button class="nav__toggle" type="button">
+            <button class="nav__toggle nav__toggle--closed" type="button">
               <svg class="nav__img nav__img--closed" width="24" height="12">
                 <use xlink:href="img/sprite.svg#icon-closed"></use>
               </svg>
               <svg class="nav__img nav__img--opened" width="13" height="13">
                 <use xlink:href="img/sprite.svg#icon-opened"></use>
               </svg>
-              <span class="visually-hidden">Открыть меню</span>
+              <span class="visually-hidden">Закрыть меню</span>
             </button>
           </nav>
+
         </div>
         <div class="welcome">
           <p class="welcome__title">Круизы в&nbsp;Антарктику </p>
@@ -268,8 +270,9 @@
               до&nbsp;50%</p>
           </div>
           <div class="form__content-wrapper">
-            <div class="form__data form__data--index" data-form-validate="data-form-validate" data-callback="base"  data-message-success="Поле обязательно к заполнению">
-              <form class="form__form" method="post" action="https://echo.htmlacademy.ru/" >
+            <div class="form__data form__data--index" data-form-validate="data-form-validate" data-callback="base"
+              data-message-success="Поле обязательно к заполнению">
+              <form class="form__form" method="post" action="https://echo.htmlacademy.ru/">
                 <fieldset class="form__fieldset">
                   <legend class="form__legend">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее
                     время</legend>
@@ -293,15 +296,15 @@
                     <input class="form__input" placeholder="Email" type="email" name="email" id="email" required>
                   </div>
                   <div class="form__button-wrapper">
-                    <div class ="form__checkbox-wrapper" data-validate-type="checkbox"
-                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                    data-required="data-required">
-                    <label class="form__label form__label--checkbox">
-                      <input class="visually-hidden form__checkbox" type="checkbox" name="agreement" required>
-                      <span class="form__mark"></span>
-                      <span class="form__checkbox-text">Я согласен на&nbsp;обработку моих&nbsp;персональных
-                        данных</span>
-                    </label>
+                    <div class="form__checkbox-wrapper" data-validate-type="checkbox"
+                      data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                      data-required="data-required">
+                      <label class="form__label form__label--checkbox">
+                        <input class="visually-hidden form__checkbox" type="checkbox" name="agreement" required>
+                        <span class="form__mark"></span>
+                        <span class="form__checkbox-text">Я согласен на&nbsp;обработку моих&nbsp;персональных
+                          данных</span>
+                      </label>
                     </div>
                     <button class="form__button" type="submit">Оставить заявку</button>
                   </div>
@@ -380,7 +383,6 @@
               <li class="nav__item nav__item--footer">
                 <a class="nav__link nav__link--footer" href="#contacts"> Контакты</a>
               </li>
-              <li class="nav__item nav__item--footer">
             </ul>
           </nav>
           <nav class="social">

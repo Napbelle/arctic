@@ -21,8 +21,8 @@
 
   @media screen and (max-width: 767px) {
     width: calc(290px + (100vw - 320px) * (290 - 694) / (320 - 767));
-   // height: calc(316px + (100vw - 320px) * (316 - 755.2) / (320 - 767));
-   height: 316px;
+    // height: calc(316px + (100vw - 320px) * (316 - 755.2) / (320 - 767));
+    height: 316px;
     background-image: url("../img/map-mobile.webp");
   }
 }
