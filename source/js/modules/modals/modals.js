@@ -174,6 +174,8 @@ export class Modals {
   close(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
     document.removeEventListener('click', this._documentClickHandler);
+    const logo = document.querySelector('.header__logo');
+    logo.classList.remove('is-invalid');
 
     if (!modal || !modal.classList.contains('is-active')) {
       return;
@@ -203,5 +205,7 @@ export class Modals {
 
     this._setSettings('default');
     this._enableScrolling = true;
+
+    location.search();
   }
 }

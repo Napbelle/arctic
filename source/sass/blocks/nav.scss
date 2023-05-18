@@ -36,7 +36,7 @@
   }
 }
 
-.nav__img--opened.is-active {
+.nav--header.is-active .nav__img--opened {
   @media screen and (max-width: 767px) {
     display: block;
     color: $color-tangaroa;
@@ -63,7 +63,7 @@
   }
 }
 
-.nav__list--header.is-active {
+.nav--header.is-active .nav__list--header {
   @media screen and (max-width: 767px) {
     margin: 0;
     display: flex;
@@ -75,7 +75,7 @@
     color: $color-tangaroa;
     font-family: "Montserrat Medium", "Arial", sans-serif;
     font-weight: 500;
-    padding: 84px 26px;
+    padding: 56px 26px;
     font-size: 18px;
     line-height: 21.9px;
     position: absolute;
@@ -95,7 +95,7 @@
 }
 
 .nav__list--footer {
-  margin-top: 3px;
+  margin-top: 2px;
   margin-right: 30px;
 
   @media screen and (max-width: 1023px) {
@@ -134,6 +134,16 @@
   color: $color-deep-sky-blue;
 }
 
+.nav__item--logo {
+  display: none;
+}
+
+.nav--header.is-active .nav__item--logo {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
 .nav__item {
   margin-right: 5.5%;
   margin-bottom: 20px;
@@ -159,7 +169,7 @@
   }
 }
 
-.nav__item--header:nth-of-type(4),
+.nav__item--header:nth-of-type(5),
 .nav__item--footer:nth-of-type(4) {
   margin-right: 0;
 }
@@ -193,4 +203,78 @@
     padding: 0;
     margin: 0;
   }
+}
+
+.nav--header {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 12;
+    pointer-events: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: calc(320px + (100vw - 320px) * (320 - 767) / (320 - 767));
+    max-width: 767px;
+    background-color: $color-transparent-prussian-blue;
+    overflow: scroll;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity $trans-modal,
+      transform $trans-modal,
+      visibility $trans-modal;
+  }
+}
+
+
+.nav--header.is-active {
+  @media screen and (max-width: 767px) {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+
+    pointer-events: auto;
+  }
+}
+
+
+.nav__overlay {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+  }
+}
+
+.nav__img-mobile {
+  @media screen and (max-width: 767px) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    z-index: 14;
+    fill: $color-tangaroa;
+    width: 42px;
+    height: 22px;
+  }
+
+  @media screen and (max-width: 319px) {
+    right: 65.2%;
+  }
+}
+
+.nav__img-mobile:hover {
+  fill: $color-deep-sky-blue;
 }
