@@ -125,12 +125,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
-  overflow: scroll;
+  //overflow: scroll;
+
+  @media screen and (min-width: 1366px) {
+    max-height: 390px;
+  }
+
+  @media screen and (min-width: 1300px) and (max-width: 1365px) {
+    height: calc(440px + (100vw - 1300px) * (440 - 420) / (1300 - 1365));
+  }
 
   @media screen and (max-width: 1023px) {
     padding: 35px 11.3% 29px;
     height: calc(386px + (100vw - 768px) * (386 - 509.5) / (768 - 1023));
   }
+
 
   @media screen and (max-width: 767px) {
     padding: 29px 9.6% 35px;
@@ -161,6 +170,15 @@
   display: none;
   overflow: scroll;
 }
+
+/*
+.catalog__text-wrapper::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: $color-alice-blue;
+
+}
+*/
 
 .catalog__item:hover .catalog__text-wrapper,
 .catalog__item:focus .catalog__text-wrapper {
@@ -335,8 +353,13 @@
   width: calc(100px + (210 - 100) * ((100vw - 500px) / (1366 - 500)));
   user-select: none;
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1366px) {
     max-width: 210px;
+  }
+
+  @media screen and (min-width: 1301px) and (max-width: 1365px) {
+    width: calc(200px + (100vw - 1301px) * (200 - 209.7) / (1301 - 1365));
+    padding: 7px 15% 10px;
   }
 
   @media screen and (max-width: 1300px) {
@@ -344,7 +367,6 @@
   }
 
   @media screen and (max-width: 1023px) {
-    //  width: 239px;
     width: calc(239px + (100vw - 768px) * (239 - 317) / (768 - 1023));
   }
 
