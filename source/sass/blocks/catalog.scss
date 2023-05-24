@@ -135,6 +135,10 @@
     height: calc(440px + (100vw - 1300px) * (440 - 420) / (1300 - 1365));
   }
 
+  @media screen and (min-width: 1024px) and (max-width: 1299px) {
+    height: 389px;
+  }
+
   @media screen and (max-width: 1023px) {
     padding: 35px 11.3% 29px;
     height: calc(386px + (100vw - 768px) * (386 - 509.5) / (768 - 1023));
@@ -176,6 +180,9 @@
     width: 2px;
     height: 2px;
     background-color: $color-alice-blue;
+    position: absolute;
+    top: -10px;
+    left: -10px;
 
 }
 */

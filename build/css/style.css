@@ -2215,6 +2215,11 @@ button,
     height: calc(440px + (100vw - 1300px) * 20 / -65);
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+  .catalog__item {
+    height: 389px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .catalog__item {
     padding: 35px 11.3% 29px;
@@ -2261,6 +2266,9 @@ button,
     width: 2px;
     height: 2px;
     background-color: $color-alice-blue;
+    position: absolute;
+    top: -10px;
+    left: -10px;
 
 }
 */
