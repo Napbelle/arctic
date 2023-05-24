@@ -127,15 +127,15 @@
   border: none;
   //overflow: scroll;
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1365px) {
     max-height: 390px;
   }
 
-  @media screen and (min-width: 1300px) and (max-width: 1365px) {
+  @media screen and (min-width: 1299px) and (max-width: 1365px) {
     height: calc(440px + (100vw - 1300px) * (440 - 420) / (1300 - 1365));
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1299px) {
+  @media screen and (min-width: 1023px) and (max-width: 1299px) {
     height: 389px;
   }
 
